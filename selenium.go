@@ -191,6 +191,8 @@ type WebDriver interface {
 	CloseWindow(name string) error
 	/* Maximize window, if name is empty - will use current */
 	MaximizeWindow(name string) error
+	/* Set window size, if name is empty - will use current */
+	SetWindowSize(name string, width int, height int) error
 
 	// Navigation
 	/* Open url. */
